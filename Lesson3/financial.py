@@ -3,6 +3,7 @@ file = open(file_name, 'r', encoding='utf-8')
 
 # Формируем словарь вида {Клиент: Деньги}
 data_dict = dict([i.split() for i in file.read().splitlines()])
+file.close()
 
 # Приводим значения к типу int
 sum = sum([int(a) for a in data_dict.values()])
