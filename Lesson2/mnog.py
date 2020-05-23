@@ -14,3 +14,4 @@ live_near = {'john', 'vladislav', 'olga', 'mike', 'grant', 'covid', 'bilbo' }
 #  д/з объединить множество людей, которые живут и работают рядом
 # вывести множество людей, которые и владеют авто нужной марки, и живут и работают рядом
 
+print(shevrole_owner & (work_near ^ live_near))
